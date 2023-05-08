@@ -8,21 +8,21 @@ export const actions: Actions = {
 			image: string;
 			date: string;
 		};
-		console.log({title})
+		console.log({ title, body, image, date });
 		try {
 			await prisma.post.create({
-                data: {
-                    image,
-                    title,
-                    body,
-                    date
-                }
+				data: {
+					image,
+					title,
+					body,
+					date
+				}
 			});
 		} catch (err) {
 			fail(500, { message: 'Could not create post' });
 		}
-        return {
-            status: 201
-        }
+		return {
+			status: 201
+		};
 	}
 };

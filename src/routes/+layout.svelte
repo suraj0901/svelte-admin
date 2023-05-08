@@ -2,7 +2,6 @@
 	import 'virtual:uno.css';
 	import '@unocss/reset/tailwind-compat.css';
 	import { darkMode } from './store';
-	
 </script>
 
 <div class:dark={$darkMode}>

@@ -16,4 +16,5 @@ model Post {
   image String
   date DateTime
   body String
+  published Boolean
 }

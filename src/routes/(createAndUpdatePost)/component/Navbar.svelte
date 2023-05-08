@@ -1,4 +1,5 @@
 <script>
+// @ts-nocheck
 	import { page } from '$app/stores';
 	import { publish, save } from './store';
 	$: title = $page.url.pathname === '/createPost' ? 'Create' : 'Update';

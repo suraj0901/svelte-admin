@@ -11,6 +11,12 @@ declare global {
 		// interface Platform {}
 	}
 	var prisma: PrismaClient
+	interface FormState  {
+        title:string,
+        image: string,
+        date: string,
+        body:string
+    }
 }
 
 export {};
